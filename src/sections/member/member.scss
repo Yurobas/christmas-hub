@@ -1,0 +1,17 @@
+.member {
+  background: url('./images/section-pattern.svg') 50% 50%/cover no-repeat $grayLight;
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 9vw 6vw 7vw;
+  }
+  &__info {
+    max-width: 570px;
+    margin-right: 8vw;
+  }
+  &__title {
+    margin-bottom: 12px;
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "name": "christmas-hub",
+  "version": "1.0.0",
+  "description": "",
+  "source": "src/index.pug",
+  "browserslist": "> 0.5%, last 2 versions, not dead",
+  "scripts": {
+    "dev": "parcel src/index.pug",
+    "build": "parcel build src/index.pug",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Yurobas/christmas-hub.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Yurobas/christmas-hub/issues"
+  },
+  "homepage": "https://github.com/Yurobas/christmas-hub#readme",
+  "devDependencies": {
+    "@parcel/transformer-pug": "^2.0.1",
+    "@parcel/transformer-sass": "^2.0.1",
+    "parcel": "latest"
+  }
+}

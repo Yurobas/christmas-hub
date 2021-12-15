@@ -1,0 +1,70 @@
+.roadmap {
+  &__steps {
+    margin-top: 60px;
+  }
+  &__step {
+    max-width: 930px;
+    text-transform: uppercase;
+    &.--active {
+      & .roadmap__step-head {
+        &:after {
+          border-color: $red;
+        }
+      }
+      & .roadmap__step-name {
+        position: relative;
+        display: flex;
+        align-items: center;
+        &:after {
+          content: 'Right NOW';
+          display: block;
+          margin-left: 14px;
+          padding: 7px 12px 5px;
+          color: $greenLight;
+          font-size: 14px;
+          text-transform: uppercase;
+          line-height: 1.5;
+          border-radius: 12px;
+          background-color: rgba(0, 154, 90, .10);
+        }
+      }
+    }
+    & + & {
+      margin-top: 16px;
+    }
+    &-block {
+      position: relative;
+      padding-left: 78px;
+    }
+    &-head {
+      margin-bottom: 16px;
+      &:after {
+        content: '';
+        position: absolute;
+        top: 3px;
+        left: 0;
+        display: block;
+        width: 28px;
+        height: 28px;
+        border-radius: 50%;
+        border: 6px solid $black;
+      }
+    }
+    &-body {
+      padding-bottom: 30px;
+      &:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 13px;
+        bottom: 0;
+        display: block;
+        width: 2px;
+        background-color: $gray;
+      }
+    }
+    &-date {
+      margin-bottom: 16px;
+    }
+  }
+}

@@ -1,0 +1,22 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    link(rel="stylesheet", href="style.scss")
+    title Christmas hub
+
+    include components/mixins
+
+  body
+    main.wrapper 
+      include sections/hero/hero
+      include sections/lottery/lottery
+      include sections/collection/collection
+      include sections/member/member
+      include sections/roadmap/roadmap
+      include sections/team/team
+      include sections/faq/faq
+
+    include icons
