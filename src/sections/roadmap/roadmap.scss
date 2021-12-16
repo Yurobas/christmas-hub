@@ -2,6 +2,9 @@
   &__steps {
     max-width: 80vw;
     margin-top: 60px;
+    @media (max-width: 767px) {
+      margin-top: 20px;
+    }
   }
   &__step {
     max-width: 930px;

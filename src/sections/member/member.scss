@@ -9,6 +9,9 @@
     @media (max-width: 650px) {
       flex-direction: column;
     }
+    @media (max-width: 480px) {
+      padding: 15vw 6vw;
+    }
   }
   &__info {
     max-width: 570px;
