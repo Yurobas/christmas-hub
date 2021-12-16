@@ -6,12 +6,29 @@
     justify-content: center;
     width: 100%;
     padding: 9vw 6vw 7vw;
+    @media (max-width: 650px) {
+      flex-direction: column;
+    }
   }
   &__info {
     max-width: 570px;
     margin-right: 8vw;
+    @media (max-width: 650px) {
+      max-width: 75vw;
+      margin-right: unset;
+      margin-bottom: 40px;
+    }
   }
   &__title {
     margin-bottom: 12px;
+    &.title.--section {
+      text-align: left;
+    }
+  }
+  &__picture {
+    max-width: 35vw;
+    @media (max-width: 650px) {
+      max-width: 75vw;
+    }
   }
 }

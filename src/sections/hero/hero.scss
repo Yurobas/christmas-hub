@@ -1,10 +1,22 @@
 .hero {
+  @media (max-width: 600px) {
+    margin-top: 30vw;
+  }
   &__content {
     text-align: center;
   }
   &__info {
     max-width: 500px;
     margin: 0 auto;
+    @media (max-width: 1023px) {
+      max-width: 450px;
+    }
+    @media (max-width: 767px) {
+      max-width: 390px;
+    }
+    @media (max-width: 480px) {
+      max-width: 350px;
+    }
   }
   &__subtitle {
     margin-bottom: 12px;
@@ -12,6 +24,7 @@
   &__extra {
     margin-top: 25px;
     &-item {
+      margin: 0;
       & + & {
         margin-top: 12px;
       }
@@ -27,6 +40,7 @@
   }
   &__bg {
     display: block;
+    max-width: 70vw;
     margin-top: 30px;
   }
 }

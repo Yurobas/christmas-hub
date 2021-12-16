@@ -1,6 +1,9 @@
 .socials {
   display: flex;
   align-items: center;
+  @media (max-width: 480px) {
+    justify-content: center;
+  }
   &__item {
     &:not(:last-of-type) {
       margin-right: 25px;

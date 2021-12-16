@@ -6,11 +6,22 @@
     display: flex;
     align-items: center;
     margin-top: 60px;
+    @media (max-width: 767px) {
+      flex-direction: column-reverse;
+      margin-top: 40px;
+    }
   }
   &__info {
-    width: 23vw;
-    margin-right: 4.6vw;
+    width: 385px;
+    max-width: 35vw;
+    margin-right: 12vw;
     text-transform: uppercase;
+    @media (max-width: 1023px) {
+      margin-right: 6vw;
+    }
+    @media (max-width: 767px) {
+      max-width: 80vw;
+    }
   }
   &__socials {
     margin-top: 25px;
@@ -19,18 +30,32 @@
     position: relative;
     display: flex;
     justify-content: center;
-    width: 32vw;
+    width: 348px;
+    max-width: 30vw;
+    @media (max-width: 767px) {
+      max-width: 50vw;
+      margin-bottom: 40px;
+    }
     &-lines {
       position: absolute;
+      max-width: 60vw;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
       z-index: 1;
+      @media (max-width: 1023px) {
+        opacity: .2;
+      }
+      @media (max-width: 767px) {
+        max-width: 95vw;
+      }
     }
     &-block {
       position: relative;
       border-radius: 145px;
       background-color: $bg_gray;
+      box-shadow: $shadow;
+      overflow: hidden;
       z-index: 2;
     }
   }
@@ -59,13 +84,29 @@
     display: flex;
     justify-content: center;
     margin-top: 80px;
+    @media (max-width: 1023px) {
+      flex-direction: column;
+    }
+    @media (max-width: 767px) {
+      margin-top: 40px;
+    }
   }
   &__member {
     display: flex;
     align-items: center;
-    width: 30vw;
+    width: 520px;
+    max-width: 45vw;
+    @media (max-width: 1023px) {
+      max-width: 80vw;
+      & + & {
+        margin-top: 50px;
+      }
+    }
     &:not(:last-of-type) {
-      margin-right: 1vw;
+      margin-right: 50px;
+      @media (max-width: 1023px) {
+        margin-right: unset;
+      }
     }
     &-icon {
       width: 176px;
@@ -73,6 +114,12 @@
       height: 167px;
       margin-right: 35px;
       border-radius: 50%;
+      @media (max-width: 767px) {
+        width: 130px;
+        min-width: 130px;
+        height: 125px;
+        margin-right: 25px;
+      }
     }
     &-image {
       width: 100%;

@@ -1,5 +1,6 @@
 .roadmap {
   &__steps {
+    max-width: 80vw;
     margin-top: 60px;
   }
   &__step {
@@ -21,8 +22,9 @@
           margin-left: 14px;
           padding: 7px 12px 5px;
           color: $greenLight;
-          font-size: 14px;
+          font-size: 0.875rem;
           text-transform: uppercase;
+          white-space: nowrap;
           line-height: 1.5;
           border-radius: 12px;
           background-color: rgba(0, 154, 90, .10);
@@ -35,6 +37,9 @@
     &-block {
       position: relative;
       padding-left: 78px;
+      @media (max-width: 480px) {
+        padding-left: 50px;
+      }
     }
     &-head {
       margin-bottom: 16px;
