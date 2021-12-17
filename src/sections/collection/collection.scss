@@ -1,4 +1,16 @@
 .collection {
+  &__spot {
+    &:first-of-type {
+      top: 40%;
+      left: 0%;
+      transform: rotate(110deg) translate(-50%, 85%);
+    }
+    &:nth-of-type(2) {
+      right: 0%;
+      bottom: -25%;
+      transform: rotate(75deg) translate(25%, -70%);
+    }
+  }
   &__description {
     max-width: 50vw;
     text-align: center;
@@ -30,8 +42,56 @@
     @media (max-width: 550px) {
       width: 50%;
     }
+    &:first-of-type {
+      & .collection__item-square {
+        left: 0;
+        bottom: calc(100% + 6px);
+        @media (max-width: 767px) {
+          top: -42px;
+          left: -44px;
+          bottom: unset;
+        }
+      }
+    }
+    &:nth-of-type(2) {
+      & .collection__item-square {
+        top: -41px;
+        right: -49px;
+      }
+    }
+    &:nth-of-type(3) {
+      & .collection__item-square {
+        top: 18px;
+        left: calc(100% + 10px);
+        @media (max-width: 767px) {
+          top: -42px;
+        }
+      }
+    }
+    &:nth-of-type(4) {
+      & .collection__item-square {
+        top: 30px;
+        right: calc(100% + 17px);
+        @media (max-width: 767px) {
+          top: unset;
+          right: -45px;
+          bottom: -45px;
+        }
+      }
+    }
+    &:nth-of-type(5) {
+      & .collection__item-square {
+        left: calc(100% + 12px);
+        bottom: 5px;
+      }
+    }
+    &-picture {
+      position: relative;
+    }
     &-image {
+      position: relative;
       box-shadow: 0px 10px 40px 0px rgba(63, 126, 202, 0.25);
+      z-index: 1;
     }
     &-name {
       margin-top: 18px;

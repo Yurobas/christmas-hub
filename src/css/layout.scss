@@ -95,12 +95,14 @@ button {
 
 .wrapper {
   padding: 0 30px;
+  overflow: hidden;
   @media (max-width: 767px) {
     padding: 0 15px;
   }
 }
 
 .section {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -219,5 +221,17 @@ button {
   cursor: pointer;
   &:hover {
     background-size: 100% 2px;
+  }
+}
+
+.spot,
+.square {
+  position: absolute;
+  max-width: 25vw;
+}
+
+.square {
+  @media (max-width: 1023px) {
+    opacity: .15;
   }
 }

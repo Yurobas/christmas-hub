@@ -1,6 +1,18 @@
 section.section.hero
+  .hero__bg
+    img.hero__bg-image(src="./images/decorations/hero-bg.png", srcset="./images/decorations/hero-bg-2x.png 2x", alt="Picture")
   .hero__content
-    h1.hero__title.title Christmas hub
+    .hero__decorations
+      img.hero__decoration(src="./images/decorations/star.svg", alt="star")
+      img.hero__decoration(src="./images/decorations/ticket.svg", alt="ticket")
+      img.hero__decoration(src="./images/decorations/heart.svg", alt="heart")
+      img.hero__decoration(src="./images/decorations/circle.svg", alt="circle")
+      img.hero__decoration(src="./images/decorations/coin.svg", alt="coin")
+      img.hero__decoration(src="./images/decorations/snowflake.svg", alt="snowflake")
+    h1.hero__title.title 
+      | Christmas 
+      span hub
+       img(src="./images/decorations/hat.svg", alt="Christmas Hat")
     .hero__info
       .hero__subtitle.title.--subtitle
         span.accent THE FIRST
@@ -11,6 +23,9 @@ section.section.hero
         li.hero__extra-item.title.--extra 2oTh December
         li.hero__extra-item.title.--extra 0.25 SOL
       a.hero__button.button(href="#0") MINT
+        img.hero__button-cloud(src="./images/decorations/cloud.svg", alt="Cloud")
+        img.hero__button-squares.--left(src="./images/decorations/hero-squares-left.svg", alt="Squares")
+        img.hero__button-squares.--right(src="./images/decorations/hero-squares-right.svg", alt="Squares")
       .hero__socials 
         +socials()
-  img.hero__bg(src="./images/hero-bg.png", srcset="./images/hero-bg-2x.png 2x, ./images/hero-bg-3x.png 3x", alt="Picture")
+  img.hero__picture(src="./images/hero-picture.png", srcset="./images/hero-picture-2x.png 2x, ./images/hero-picture-3x.png 3x", alt="Picture")

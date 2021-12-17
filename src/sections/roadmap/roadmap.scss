@@ -1,4 +1,16 @@
 .roadmap {
+  &__spot {
+    &:first-of-type {
+      top: 00%;
+      left: 0%;
+      transform: rotate(50deg) translate(-50%, 40%);
+    }
+    &:nth-of-type(2) {
+      right: 0%;
+      bottom: -5%;
+      transform: rotate(75deg) translate(25%, -70%);
+    }
+  }
   &__steps {
     max-width: 80vw;
     margin-top: 60px;

@@ -1,11 +1,25 @@
 .member {
   background: url('./images/section-pattern.svg') 50% 50%/cover no-repeat $grayLight;
+  overflow: hidden;
+  &__square {
+    &:first-of-type {
+      top: 13%;
+      left: 11%;
+      @media (max-width: 767px) {
+        left: 0;
+      }
+    }
+    &:nth-of-type(2) {
+      right: 6%;
+      bottom: 6%;
+    }
+  }
   &__content {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
-    padding: 9vw 6vw 7vw;
+    padding: 12vw 6vw;
     @media (max-width: 650px) {
       flex-direction: column;
     }
@@ -23,15 +37,96 @@
     }
   }
   &__title {
+    position: relative;
     margin-bottom: 12px;
     &.title.--section {
       text-align: left;
     }
+    &-decoration {
+      position: absolute;
+      top: 0;
+      right: 0;
+      transform: translate(25%, -50%);
+    }
+  }
+  &__description {
+    text-transform: uppercase;
   }
   &__picture {
-    max-width: 35vw;
+    position: relative;
+    max-width: 30vw;
     @media (max-width: 650px) {
-      max-width: 75vw;
+      max-width: 50vw;
+    }
+    &-first {
+      position: relative;
+      z-index: 1;
+    }
+    &-second,
+    &-third {
+      position: absolute;
+      left: 50%;
+      bottom: 0;
+    }
+    &-second {
+      width: 90%;
+      opacity: .6;
+      transform: translate(-50%, 12px);
+    }
+    &-third {
+      width: 80%;
+      opacity: .3;
+      transform: translate(-50%, 24px);
+    }
+    &-cloud {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 141px;
+      max-width: 31%;
+      transform: translate(24%, -27%);
+      z-index: 2;
+    }
+  }
+  &__hero {
+    position: absolute;
+    max-height: 12vw;
+    @media (max-width: 1023px) {
+      display: none;
+    }
+    &.--opacity {
+      opacity: .15;
+    }
+    &.--icons {
+      max-height: 7vw;
+    }
+    &:first-child {
+      left: 40vw;
+      bottom: 0;
+    }
+    &:nth-child(2) {
+      left: 1vw;
+      bottom: 0;
+      max-width: 16vw;
+    }
+    &:nth-child(3) {
+      top: 0;
+      left: 15vw;
+    }
+    &:nth-child(4) {
+      top: 0;
+      right: 10vw;
+      @media (max-width: 1600px) {
+        right: 1vw;
+      }
+    }
+    &:nth-child(5) {
+      left: 20vw;
+      bottom: 0;
+    }
+    &:nth-child(6) {
+      top: 1vw;
+      right: 35vw;
     }
   }
 }
