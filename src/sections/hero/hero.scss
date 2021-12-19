@@ -1,9 +1,9 @@
 .hero {
   position: relative;
   margin-top: 0;
-  padding-top: 11vw;
+  padding-top: 6vw;
   @media (max-width: 600px) {
-    padding-top: 30vw;
+    padding-top: 12vw;
   }
   &__bg {
     position: absolute;
@@ -70,6 +70,18 @@
       @media (max-width: 1024px) {
         right: -4%;
       }
+    }
+  }
+  &__logo {
+    position: relative;
+    width: 150px;
+    margin: 0 auto 50px;
+    z-index: 1;
+    @media (max-width: 480px) {
+      width: 130px;
+    }
+    &-image {
+      border-radius: 4px;
     }
   }
   &__title {
