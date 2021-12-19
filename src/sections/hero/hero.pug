@@ -1,8 +1,15 @@
 section.section.hero
   .hero__bg
     img.hero__bg-image(src="./images/decorations/hero-bg.png", srcset="./images/decorations/hero-bg-2x.png 2x", alt="Picture")
-  a.hero__logo(href="https://nftcalendar.io/event/christmas-hub-nft/" target="_blank")
-    img.hero__logo-image(src="./images/nftcalendar/nft_calendar_logo_vector_optimized.svg", alt="Logo nftcalendar.io")
+  .hero__logos
+    a.hero__logo.--upcoming(href="https://upcomingnft.net/event/christmas-hub/" target="_blank")
+      img.hero__logo-image(src="./images/logos/upcoming.png", srcset="./images/logos/upcoming-2x.png 2x, ./images/logos/upcoming-3x.png 3x", alt="Logo upcoming")
+    a.hero__logo.--calendar(href="https://nftcalendar.io/event/christmas-hub-nft/" target="_blank")
+      img.hero__logo-image(src="./images/logos/nft_calendar_logo_vector_optimized.svg", alt="Logo nftcalendar.io")
+    a.hero__logo.--r(href="https://howrare.is/drops" target="_blank")
+      img.hero__logo-image(src="./images/logos/r.png", srcset="./images/logos/r-2x.png 2x, ./images/logos/r-3x.png 3x", alt="Logo r")
+    a.hero__logo.--non-fungi(href="https://www.non-fungi.com/drops/christmas-hub-nft/" target="_blank")
+      img.hero__logo-image(src="./images/logos/non-fungi.png", srcset="./images/logos/non-fungi-2x.png 2x, ./images/logos/non-fungi-3x.png 3x", alt="Logo non-fungi")
   .hero__content
     .hero__decorations
       img.hero__decoration(src="./images/decorations/star.svg", alt="star")
